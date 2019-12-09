@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { AppLoading } from "expo";
-import { AppNavigator } from "./src/navigation/AppNavigation";
+import { AppNavigation } from "./src/navigation/AppNavigation";
 import bootstrap from "./src/bootstrap";
 
 export default function App() {
@@ -17,5 +17,5 @@ export default function App() {
     );
   }
 
-  return <AppNavigator />;
+  return <AppNavigation />;
 }
