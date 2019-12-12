@@ -41,7 +41,6 @@ export const PhotoPicker = ({ onPick }) => {
   return (
     <View style={styles.wrapper}>
       <Button title="Make a Picture" onPress={takePhoto} />
-      {console.log("image in render: ", image)}
       {image && <Image style={styles.image} source={{ uri: image }} />}
     </View>
   );
@@ -52,7 +51,7 @@ const styles = StyleSheet.create({
     marginBottom: 10
   },
   image: {
-    height: 200,
-    width: "100%"
+    width: "100%",
+    aspectRatio: 1
   }
 });
